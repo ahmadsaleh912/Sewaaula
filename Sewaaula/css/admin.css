@@ -1,0 +1,174 @@
+/* === RESET DASAR DAN BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f3f6;
+  color: #2c3e50;
+}
+
+/* === HEADER UMUM (header.php) === */
+.page-header {
+  background: #1A2B4C;
+  color: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.page-header h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* === SIDEBAR ADMIN (sidebar.php) === */
+.sidebar {
+  width: 260px;
+  background: #2C3E50;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+.sidebar h3 {
+  font-size: 16px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #ffffff33;
+  padding-bottom: 10px;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.sidebar a:hover {
+  background: #3e5870;
+}
+.sidebar a span {
+  background: crimson;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 10px;
+  margin-left: auto;
+}
+
+/* === LAYOUT ADMIN (halaman admin berbasis container + content) === */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.content {
+  flex-grow: 1;
+  padding: 30px;
+  background: #f9f9f9;
+}
+.content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.content h3 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+/* === FORM TAMBAH PENYEWA (tambah_penyewa.php) === */
+.content form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.content form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+.content form input[type="text"],
+.content form input[type="email"],
+.content form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+.content form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+.content form button {
+  background: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.content form button:hover {
+  background: #27ae60;
+}
+.content form a {
+  margin-left: 12px;
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.content form a:hover {
+  text-decoration: underline;
+}
+
+/* === TABEL KELOLA PENGGUNA (kelola_pengguna.php) === */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.content table th {
+  background-color: #f2f2f2;
+  color: #2c3e50;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: left;
+}
+.content table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+}
+.content table tr:hover {
+  background-color: #f9f9f9;
+}
+.content table .aksi a {
+  color: #3498db;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.content table .aksi a:hover {
+  text-decoration: underline;
+  color: #2c80b4;
+}

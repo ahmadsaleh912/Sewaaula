@@ -1,0 +1,124 @@
+/* === BODY halaman login ===
+Menjadikan tampilan form login rata tengah di seluruh layar */
+body {
+  background: #ecf0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Kontainer Utama Login ===
+Kotak putih yang membungkus seluruh form login */
+.login-container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* === Judul Form Login === */
+.login-container h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* === Form Login (pengelompokan input dan label) === */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* === Label untuk input (Email & Password) === */
+.login-container label {
+  text-align: left;
+  font-weight: 500;
+  color: #34495e;
+  font-size: 14px;
+}
+
+/* === Input Email === */
+.login-container input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+/* === Kontainer Input Password + Ikon Mata === */
+.password-container {
+  position: relative; /* dibutuhkan untuk memposisikan ikon 👁️ */
+}
+
+/* === Input Password === */
+.password-container input {
+  width: 100%;
+  padding: 10px 38px 10px 12px; /* padding kanan disesuaikan untuk tempat ikon 👁️ */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+/* === Efek Fokus Saat Klik Input Email atau Password === */
+.password-container input:focus,
+.login-container input[type="email"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* === Ikon Mata 👁️ untuk toggle password === */
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+}
+
+/* === Tombol Login === */
+.login-container button {
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #2980b9;
+}
+
+/* === Teks di Bawah Form (daftar akun) === */
+.login-container p {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* === Link Registrasi (dalam paragraf) === */
+.login-container a {
+  color: #2ecc71;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
